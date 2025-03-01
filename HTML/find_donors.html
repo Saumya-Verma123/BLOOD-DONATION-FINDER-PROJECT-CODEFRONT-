@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Donors</title>
+    <link rel="stylesheet" href="/CSS/common.css">
+    <link rel="stylesheet" href="/CSS/finddonors.css">
+    <script type="module" src="/javascript folder/find_donors.js" defer></script>
+</head>
+<body>
+
+
+    <main class="container">
+        <!-- Image taking up half the screen vertically -->
+        <div class="image-container">
+            <img src="/Images/How ten organ donors achieved life after death & saved lives.jpeg" alt="Find Donors">
+        </div>
+
+        <!-- Donor search form on the other side -->
+        <div class="form-container">
+            <h1>Find Donors</h1>
+            <h2>Search for a Blood Donor</h2>
+            <form>
+                <label for="bloodGroup">Blood Group:</label>
+                <select id="bloodGroup">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                <button class="buttons" type="submit">Search</button>
+            </form>
+
+            <h3>Available Donors</h3>
+            <p id="statusMessage"></p> 
+
+            <!-- Properly aligned donor list -->
+            <div id="donorList" class="donor-list">
+                <!-- Donor cards will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact us for more information. (9876543201)</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Request Blood</title>
+    <script type="module" src="/javascript folder/request_blood.js" defer></script>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/common.css">
+    <link rel="stylesheet" href="/CSS/request.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="bloodimage" src="/Images/Hands holding a red blood.jpeg">
+             <h1>Request Blood</h1>
+              <!-- Navigation menu for easy access to different pages -->
+            <nav>
+                <button class="buttons" onclick="location.href='LandingPage.html'">Home</button>
+                <button class="buttons" onclick="location.href='signup.html'">Sign Up to Donate</button>
+                <button class="buttons" onclick="location.href='find_donors.html'">Find Donors</button>
+                <button class="buttons" onclick="location.href='donor_profile.html'">Donors Profile</button>
+                <button class="buttons" onclick="location.href='about.html'">About Us</button>
+            </nav>
+        </div>
+    </header>
+    <section>
+           
+        <!-- Form for users to request blood donation -->
+        <form>
+            <div class="block">
+                  <!-- Input field for patient's name -->
+                <label for="patientName">Enter the Patient's Name:</label>
+                <input type="text" id="patientName" placeholder="Patient's Name">
+            </div>
+            <!-- Dropdown menu for selecting required blood group -->
+           <div class="block">
+                <label for="bloodGroup">Required Blood Group:</label>
+                <select id="bloodGroup" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+           </div>
+           <div class="block">
+                 <!-- Input field for hospital location -->
+                <label for="hospitalLocation">Enter Hospital Location:</label>
+                <input type="text" id="hospitalLocation" placeholder="Hospital Location" required>
+           </div>
+            <!-- Dropdown menu for urgency level -->
+           <div class="block">
+                <label for="urgency">Select Urgency Level:</label>
+                <select id="urgency" required>
+                    <option value="Emergency">Emergency</option>
+                    <option value="Within 24hrs">Within 24hrs</option>
+                    <option value="Within a week">Within a week</option>
+                </select>
+           </div>
+            <!-- Input field for contact details -->
+           <div class="block">
+                <label for="contact">Enter Contact Details:</label>
+                <input type="text" id="contact" placeholder="Contact Number" required>
+           </div>
+            <!-- Input field for specifying units of blood needed -->
+           <div class="block">
+                <label for="bloodunit">Units Of Blood Needed:</label>
+                <input type="number" id="bloodunit" placeholder="Blood Units">
+           </div>
+           <!-- Input field for additional notes -->
+           <div class="block">
+                <label for="additional">Additional Notes:</label>
+                <input type="text" id="additional">
+           </div>
+           
+            <!-- Submit button to request blood -->
+            <button type="submit">Request Blood</button>
+            
+        </form>
+    </section>
+    <footer>
+        <p>Contact us for more information.(9876543201)</p>
+    </footer>
+</body>
+</html>

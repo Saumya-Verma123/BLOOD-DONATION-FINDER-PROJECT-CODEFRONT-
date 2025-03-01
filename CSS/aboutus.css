@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+/* NAVIGATION BAR  */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    color: white;
+}
+nav a {
+    background: rgb(240, 40, 40);
+    color: white;
+    padding: 1rem 1.2rem;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    transition: .3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: rgb(246, 34, 34);
+}
+/* SECTION 1 */
+.sec {
+    width: 100%;
+    padding: 1rem;
+    height: 46vh;
+    background-image: linear-gradient(to bottom, rgba(2, 0, 0, 0.605), rgba(209, 31, 31, 0.687), rgba(92, 3, 3, 0.916)), url(/Images/login2.jpg);
+    background-size: cover;
+}
+.sec-desc {
+    min-width: 300px;
+    width: 70%;
+    margin: 4% auto;
+}
+.sec div h2 {
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sec h1 {
+    font-size: 1.5rem;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+/* SECTION 1 ENDS HERE  */
+/* SECTION 2 STARTS */
+.sec2 {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.sec2 h1 {
+    color: rgb(206, 30, 30);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+
+}
+
+.sec2 li {
+    margin-top: 1rem;
+}
+
+.sec-text {
+    margin: 2rem;
+}
+
+.sec2 h2 {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(102, 102, 102);
+}
+
+.about-us-head {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(225, 46, 46);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Underline  */
+.about-us-head::after {
+    content: '';
+    width: 33%;
+    height: 5px;
+    background: rgb(225, 46, 46);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.img-sec {
+    max-width: 200px;
+}
+
+.img-sec img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* MAKING IT RESPONSIVE  */
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+
+    }
+
+    .sec {
+        height: 70vh;
+    }
+
+    .sec2 div {
+        margin: auto;
+        width: 70%;
+    }
+
+    .img-sec {
+        display: none;
+    }
+
+    .about-us-head {
+        text-align: center;
+    }
+
+    .about-us-head::after {
+        display: none;
+    }
+
+}

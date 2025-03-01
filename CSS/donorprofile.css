@@ -1,0 +1,28 @@
+body{
+    background-color: #ffe6e6;
+  
+}
+
+.bg-image{
+    height: 100vh;
+    width: 100%;
+    background-image: url('/Images/login2.jpg');
+    background-image: linear-gradient(45deg, rgba(196, 71, 71, 0.6),  rgba(72, 16, 16, 0.559), rgba(196, 71, 71, 0.6)), url(/Images/login2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h2 {
+    font-size: 40px;
+    font-weight:bolder;
+    text-align: center;
+    color:white
+}
+div{
+    color:rgb(43, 1, 1); 
+    text-align: center;
+}
+#donorList{
+    background-color:rgba(202, 113, 113, 0.6);
+}
+

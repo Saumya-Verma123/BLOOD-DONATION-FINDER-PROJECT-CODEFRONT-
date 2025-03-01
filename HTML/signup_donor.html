@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign UP </title>
+        <link rel="stylesheet" href="/CSS/signupdonor.css">
+        <link rel="stylesheet" href="/CSS/style.css ">
+        <script type="module" src="/javascript folder/signupdonor.js" defer></script>
+    </head>
+    <body>
+       <div class="outercontainer">
+        <!-- Container for displaying an image related to blood donation -->
+            <div class="imagecontainer">
+                <img class="donor" src="/Images/World Blood Donor Day.jpeg" alt="Blood Donor">
+            </div>
+            <div>
+                <div class="header">
+                    <div class="message">Your Step Can Save A Life! </div>
+                    <div class="blooddrop">&#x1FA78;</div>
+                </div>
+                 <!-- Section for entering personal details -->
+                <div class="persondetails">
+                    <div class="detailscontainer">
+                        <label for="name">Enter Full Name</label>
+                        <input id="name" type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="detailscontainer">
+                        <label for="age">Enter Your Age</label>
+                        <input id="age" type="number" placeholder="Select Your Age">
+                    </div>
+                    
+                   <div class="detailscontainer">
+                        <label for="contact">Enter Your Contact Info</label>
+                      <input id="contact" type="tel" placeholder=" Contact Number">
+                   </div>
+                    
+                    
+                </div>
+                <!-- Section for selecting blood group and availability -->
+                <div class="lower">
+                    <div class="detailscontainer">
+                       <label class="blood" for="bloodgroup">Blood Group</label>
+                        <select id="bloodgroup">
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+" selected>O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                    <div class="detailscontainer">
+                        <div class="available">
+                            <input id="availability" type="checkbox" >
+                            <label for="availability">Available for Donation</label>
+                        </div>
+                        <input type="text" id="location"  placeholder="Enter location" >
+                    </div>
+                     <!-- Submit button for donor registration -->
+                    <button id="submitbutton">Submit</button>
+                </div>
+            </div>
+       </div>
+    </body>
+</html>
